@@ -10,7 +10,7 @@ API_ID = int(os.environ.get("API_ID", "20342933"))
 API_HASH = os.environ.get("API_HASH", "9233e5deebe6abfc9ba297a9678851be")
 
 
-OWNER_ID = int(os.environ.get("OWNER_ID", "7507289705"))
+OWNER_ID = int(os.environ.get("OWNER_ID", "6803963354"))
 DB_URL = os.environ.get("DB_URL", "mongodb+srv://sample1:VH9lX869gpSA6hiP@cluster0.hghhz.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DB_NAME = os.environ.get("DB_NAME", "madflixbotz")
 
@@ -19,7 +19,7 @@ CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002251349804"))
 FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "0"))
 
 
-FILE_AUTO_DELETE = int(os.getenv("FILE_AUTO_DELETE", "300")) # auto delete in seconds
+FILE_AUTO_DELETE = int(os.getenv("FILE_AUTO_DELETE", "600")) # auto delete in seconds
 
 
 PORT = os.environ.get("PORT", "8080")
@@ -29,7 +29,7 @@ TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
 try:
     ADMINS=[6803963354]
-    for x in (os.environ.get("ADMINS", "7507289705").split()):
+    for x in (os.environ.get("ADMINS", "6803963354").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
